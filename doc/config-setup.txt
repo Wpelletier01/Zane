@@ -1,0 +1,13 @@
+
+
+# Commande à éxécuter pour que les machine cisco puisse envoyer les configs par snmp
+
+
+ip access-list standard snmp-service
+ remark snmp serveur 1
+ permit 192.168.56.30
+
+snmp-server view conf-graber ccCopy included
+snmp-server group grp1 v3 priv write conf-graber access snmp-service 
+snmp-server user zane grp1 v3 auth sha cisco123 priv des crosemont access snmp-service 
+

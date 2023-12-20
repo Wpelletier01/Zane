@@ -1,0 +1,8 @@
+[Unit]
+Description="lance le processus de copie/envoie par le script zane"
+
+[Service]
+User=zane
+WorkingDirectory=/opt/h34_projet/src
+ExecStart=/opt/h34_projet/src/zane.sh
+EnvironmentFile=/opt/h34_projet/environment.cfg

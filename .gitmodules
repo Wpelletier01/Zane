@@ -1,0 +1,3 @@
+[submodule "config"]
+	path = config
+	url = https://git.dti.crosemont.quebec/1834089/h34_projet-config.git

@@ -1,0 +1,11 @@
+[Unit]
+Description="Execute le service zane.service 5 minutes apres boot a minuit chaque jour"
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=24h
+OnCalendar=*-*-* 00:00:00
+Unit=zane.service
+
+[Install]
+WantedBy=multi-user.target
