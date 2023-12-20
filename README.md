@@ -1,6 +1,6 @@
 # Projet Linux (ZANE)
 
-Par William Pelletier et Ineza Shima Bill Kelvin
+Par William Pelletier
 
 
 Dépôts :
